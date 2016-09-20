@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d5d0d0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="From:"
+            android:id="@+id/textView4"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/etFrom"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="34dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="To:"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/etTo"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignStart="@+id/etFrom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Type:"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_marginTop="69dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_alignStart="@+id/etTo">
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Income"
+                android:id="@+id/radIncome"
+                android:layout_toRightOf="@+id/textView12" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Expense"
+                android:id="@+id/radExpense"
+                android:layout_toRightOf="@+id/radIncome" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Report"
+            android:id="@+id/btnShowReport"
+            android:layout_below="@+id/textView12"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_marginTop="89dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tvResult"
+            android:layout_below="@+id/btnShowReport"
+            android:layout_alignStart="@+id/textView12" />
+
+
+    </RelativeLayout>
+</LinearLayout>
